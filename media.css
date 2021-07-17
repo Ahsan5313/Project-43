@@ -1,0 +1,52 @@
+/*extra small device*/
+
+@media(max-width:575.98px){
+
+    #mainTop{
+        position: relative;
+    }
+    #mainTop::after{
+
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        height: 1px;
+        transform: translateY(-50%);
+        width: 100%;
+        background: #ddd;
+    }
+    .top-left {
+       
+        text-align: center;
+    }
+    .top-right {
+       
+        text-align: center;
+    }
+    .top-left::after {       
+        left: 47%;      
+        height: 35px;
+      
+    }
+    .top-left::before {
+        left: 32%;
+        height: 35px;
+  
+    }
+    .top-right::before {
+        top: 17px;
+        left: 38%;
+        height: 41px;
+    }
+    .top-right::after {
+        top: 17px;
+        left: 60%;
+        height: 41px;
+
+    }
+    .navbar{
+        text-align: center;
+    }
+
+}
